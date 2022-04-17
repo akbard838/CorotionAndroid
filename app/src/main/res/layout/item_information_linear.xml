@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingStart="@dimen/dimen_32dp"
+    android:paddingEnd="@dimen/dimen_32dp"
+    android:paddingBottom="@dimen/dimen_24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorCloudBlue"
+        app:cardCornerRadius="@dimen/dimen_20dp"
+        app:cardElevation="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/clInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgInformationLinear"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_24dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_use_mask" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/CorotionText.Bold.RedLight"
+                android:layout_toEndOf="@id/imgInformationLinear"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_16sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_16sp"
+                app:autoSizeMinTextSize="@dimen/text_size_10sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="none"
+                tools:text="Sore Throat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                style="@style/CorotionText.SemiBold.DarkCloudBlue"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:layout_toEndOf="@id/imgInformationLinear"
+                android:textSize="@dimen/text_size_12sp"
+                tools:text="In public places (e.g., grocery stores and pharmacies). It applies to outdoor areas, too." />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

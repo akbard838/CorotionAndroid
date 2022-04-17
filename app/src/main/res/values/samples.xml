@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_of_symptoms_image">
+        <item>@drawable/ic_hard_cough</item>
+        <item>@drawable/ic_high_fever</item>
+        <item>@drawable/ic_sore_throat</item>
+        <item>@drawable/ic_confused</item>
+        <item>@drawable/ic_nose</item>
+        <item>@drawable/ic_toruble_breathing</item>
+    </array>
+
+    <array name="list_of_preventions_image">
+        <item>@drawable/ic_use_mask</item>
+        <item>@drawable/ic_wash_preventions</item>
+        <item>@drawable/ic_physical_distancing</item>
+        <item>@drawable/ic_avoid_touch</item>
+        <item>@drawable/ic_respiratory_hygience</item>
+    </array>
+
+    <string-array name="list_of_symptoms_information">
+        <item>Cough</item>
+        <item>High Fever</item>
+        <item>Sore Throat</item>
+        <item>Headache</item>
+        <item>Runny Nose</item>
+        <item>Trouble Breathing</item>
+    </string-array>
+
+    <string-array name="list_of_about_title">
+        <item>What is a coronavirus?</item>
+        <item>What is COVID-19?</item>
+        <item>How does COVID-19 spread?</item>
+        <item>Is there a vaccine, drug, or treatment for COVID-19?</item>
+    </string-array>
+
+    <string-array name="list_of_about_description">
+        <item>Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</item>
+        <item>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally.</item>
+        <item>People can catch COVID-19 from others who have the virus. The disease spreads primarily from person to person through small droplets from the nose or mouth, which are expelled when a person with COVID-19 coughs, sneezes, or speaks.</item>
+        <item>Not yet. To date, there is no vaccine and no specific antiviral medicines against COVID-19. However, people, particularly those with serious illness, may need to be hospitalized so that they can receive life-saving treatment for complications.. Most patients recover thanks to such care. \n\nPossible vaccines and some specific drug treatments are currently under investigation. They are being tested through clinical trials. WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19.</item>
+    </string-array>
+
+    <string-array name="list_of_preventions_title">
+        <item>Use Mask</item>
+        <item>Wash Your Hands</item>
+        <item>Physical Distancing</item>
+        <item>Avoid Touching</item>
+        <item>Respiratory Hygiene</item>
+    </string-array>
+
+    <string-array name="list_of_preventions_description">
+        <item>In public places (e.g., grocery stores and pharmacies). It applies to outdoor areas, too.</item>
+        <item>With an alcohol-based hand rub or wash them with soap and water.</item>
+        <item>Maintain at least 1 metre distance between yourself and anyone. Also, avoid the crowd.</item>
+        <item>Avoid touching your eyes, nose, or mouth. Hands touch many surfaces and can pick up viruses.</item>
+        <item>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze.</item>
+    </string-array>
+
+    <string-array name="list_of_washing_hand_information">
+        <item>Water &amp; Soap</item>
+        <item>Palm to Palm</item>
+        <item>Between Fingers</item>
+        <item>Focus on Thumbs</item>
+        <item>Back of Hands</item>
+        <item>Focus on Wrists</item>
+    </string-array>
+
+    <array name="list_of_washing_hand_image">
+        <item>@drawable/ic_give_soap</item>
+        <item>@drawable/ic_palm</item>
+        <item>@drawable/ic_between_fingers</item>
+        <item>@drawable/ic_wash_thumbs</item>
+        <item>@drawable/ic_wash_back_hand</item>
+        <item>@drawable/ic_wash_wrist</item>
+    </array>
+</resources>

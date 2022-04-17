@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Corotion</string>
+    <string name="label_new_confirmed">New Confirmed</string>
+    <string name="label_new_death">New Deaths</string>
+    <string name="label_new_recovered">New Recovered</string>
+    <string name="label_total_confirmed">Total Confirmed</string>
+    <string name="label_total_death">Total Deaths</string>
+    <string name="label_total_recovered">Total Recovered</string>
+    <string name="label_search">Search</string>
+    <string name="label_country_reports">Country Reports</string>
+    <string name="label_welcome_to">Welcome to</string>
+    <string name="label_corotion">Corotion!</string>
+    <string name="format_date">Date: %1$s</string>
+    <string name="message_corotion_dialog">Corotion (Corona information) is an informative mobile application that presents data on the number of people affected by corona globally and also by country</string>
+    <string name="action_no">No</string>
+    <string name="action_yes">Yes</string>
+    <string name="message_exit">Are you sure you want to exit the application?</string>
+    <string name="label_symptoms_description">If you have these symptoms, seek medical attention!</string>
+    <string name="label_preventions_description">Follow these informations to prevent the spread of COVID-19</string>
+    <string name="label_what_is">What is</string>
+    <string name="label_covid19">COVID-19?</string>
+    <string name="label_about_covid_description">Here are the overview regarding this disease (Source : WHO)</string>
+    <string name="label_symptoms">Symptoms</string>
+    <string name="label_washing_hands">Washing Hands</string>
+    <string name="label_preventions">Preventions</string>
+    <string name="label_error">Error!</string>
+    <string name="message_error_data">Aww,\n something error while loading data</string>
+</resources>

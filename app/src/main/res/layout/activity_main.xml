@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_background_blur" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_50dp"
+                android:background="@drawable/ic_background_welcome"
+                android:fitsSystemWindows="true"
+                android:paddingTop="@dimen/dimen_18dp"
+                android:paddingEnd="@dimen/dimen_32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvWelcome"
+                    style="@style/CorotionText.Bold.White"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/dimen_52dp"
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:layout_marginEnd="@dimen/dimen_24dp"
+                    android:gravity="center_vertical|end"
+                    android:lines="1"
+                    android:text="@string/label_welcome_to"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_24sp"
+                    app:autoSizeMaxTextSize="24sp"
+                    app:autoSizeMinTextSize="20sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tvCorotion"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCorotion"
+                    style="@style/CorotionText.Bold.White"
+                    android:layout_marginStart="@dimen/dimen_50dp"
+                    android:layout_marginEnd="@dimen/dimen_24dp"
+                    android:layout_marginBottom="@dimen/dimen_25dp"
+                    android:gravity="center_vertical|end"
+                    android:lines="1"
+                    android:paddingStart="@dimen/dimen_12dp"
+                    android:text="@string/label_corotion"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_30sp"
+                    app:autoSizeMaxTextSize="32sp"
+                    app:autoSizeMinTextSize="24sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnAbout"
+                    style="@style/CorotineImageButton"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:layout_constraintBottom_toTopOf="@id/tvCorotion"
+                    app:layout_constraintEnd_toStartOf="@id/tvCorotion"
+                    app:layout_constraintStart_toStartOf="@id/tvCorotion"
+                    app:layout_constraintTop_toTopOf="@id/tvCorotion"
+                    app:srcCompat="@drawable/ic_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGlobal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_48dp"
+                android:layout_marginEnd="@dimen/dimen_50dp"
+                android:background="@drawable/ic_background_text_home"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clWelcome">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGlobal"
+                    style="@style/CorotionText.Bold.Black"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="Global Information"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_20sp"
+                    app:autoSizeMaxTextSize="20sp"
+                    app:autoSizeMinTextSize="16sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDate"
+                    style="@style/CorotionText.Medium.Black"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="Date : Friday, 24 April 2020"
+                    app:autoSizeMaxTextSize="14sp"
+                    app:autoSizeMinTextSize="10sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvGlobal" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clConfirmed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_48dp"
+                android:layout_marginEnd="@dimen/dimen_80dp"
+                android:background="@drawable/ic_background_text_home"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clGlobal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelNewConfirmed"
+                    style="@style/CorotionText.Medium.Black"
+                    android:text="@string/label_new_confirmed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNewConfirmed"
+                    style="@style/CorotionText.Medium.Black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelNewConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelNewConfirmed"
+                    tools:text="70653" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvErrorNewConfirmed"
+                    style="@style/CorotionText.Medium.RedLight"
+                    android:text="@string/label_error"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelNewConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelNewConfirmed" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelTotalConfirmed"
+                    style="@style/CorotionText.Medium.Black"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/label_total_confirmed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLabelNewConfirmed" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotalConfirmed"
+                    style="@style/CorotionText.Medium.Black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelTotalConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelTotalConfirmed"
+                    tools:text="2464856" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvErrorTotalConfirmed"
+                    style="@style/CorotionText.Medium.RedLight"
+                    android:text="@string/label_error"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelTotalConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelTotalConfirmed" />
+
+                <ProgressBar
+                    android:id="@+id/pbConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tvTotalConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvNewConfirmed" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDeath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:layout_marginEnd="@dimen/dimen_80dp"
+                android:background="@drawable/ic_background_text_home"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clConfirmed">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelNewDeath"
+                    style="@style/CorotionText.Medium.Black"
+                    android:text="@string/label_new_death"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNewDeath"
+                    style="@style/CorotionText.Medium.Black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelNewDeath"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelNewDeath"
+                    tools:text="70653" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvErrorNewDeath"
+                    style="@style/CorotionText.Medium.RedLight"
+                    android:text="@string/label_error"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelNewDeath"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelNewDeath" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelTotalDeath"
+                    style="@style/CorotionText.Medium.Black"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/label_total_death"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLabelNewDeath" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotalDeath"
+                    style="@style/CorotionText.Medium.Black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelTotalDeath"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelTotalDeath"
+                    tools:text="2464856" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvErrorTotalDeath"
+                    style="@style/CorotionText.Medium.RedLight"
+                    android:text="@string/label_error"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelTotalDeath"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelTotalDeath" />
+
+                <ProgressBar
+                    android:id="@+id/pbDeath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tvTotalDeath"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvNewDeath" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clRecovered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:layout_marginEnd="@dimen/dimen_80dp"
+                android:background="@drawable/ic_background_text_home"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:paddingTop="@dimen/dimen_12dp"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:paddingBottom="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clDeath">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelNewRecovered"
+                    style="@style/CorotionText.Medium.Black"
+                    android:text="@string/label_new_recovered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNewRecovered"
+                    style="@style/CorotionText.Medium.Black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelNewRecovered"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelNewRecovered"
+                    tools:text="70653" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvErrorNewRecovered"
+                    style="@style/CorotionText.Medium.RedLight"
+                    android:text="@string/label_error"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelNewRecovered"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelNewRecovered" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabelTotalRecovered"
+                    style="@style/CorotionText.Medium.Black"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:text="@string/label_total_recovered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLabelNewRecovered" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTotalRecovered"
+                    style="@style/CorotionText.Medium.Black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelTotalRecovered"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelTotalRecovered"
+                    tools:text="2464856" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvErrorTotalRecovered"
+                    style="@style/CorotionText.Medium.RedLight"
+                    android:text="@string/label_error"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/tvLabelTotalRecovered"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvLabelTotalRecovered" />
+
+                <ProgressBar
+                    android:id="@+id/pbRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tvTotalRecovered"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvNewRecovered" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:src="@drawable/ic_information"
+        app:backgroundTint="#CCEB5569"
+        app:layout_constraintBottom_toTopOf="@id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/colorWhite" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_25dp"
+        android:src="@drawable/ic_search"
+        app:backgroundTint="#CCEB5569"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/colorWhite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/dimen_16dp"
+    android:paddingStart="@dimen/dimen_24dp"
+    android:paddingEnd="@dimen/dimen_24dp"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountry"
+        style="@style/CorotionText.Bold.White"
+        android:layout_width="match_parent"
+        android:drawableEnd="@drawable/ic_bordered_chevron_right"
+        tools:text="Indonesia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@color/colorWhite50"
+        app:layout_constraintTop_toBottomOf="@id/tvCountry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

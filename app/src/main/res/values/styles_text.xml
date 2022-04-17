@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CorotionText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="CorotionText.Medium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="CorotionText.SemiBold">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="CorotionText.Bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="CorotionText.Bold.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="CorotionText.Bold.RedLight">
+        <item name="android:textColor">@color/colorRedLight</item>
+    </style>
+
+    <style name="CorotionText.Bold.DarkCloudBlue">
+        <item name="android:textColor">@color/colorDarkCloudBlue</item>
+    </style>
+
+    <style name="CorotionText.SemiBold.DarkCloudBlue">
+        <item name="android:textColor">@color/colorDarkCloudBlue</item>
+    </style>
+
+    <style name="CorotionText.Bold.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="CorotionText.Medium.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="CorotionText.Medium.RedLight">
+        <item name="android:textColor">@color/colorRedLight</item>
+    </style>
+
+    <style name="CorotionText.Black">
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="CorotionText.White">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>
