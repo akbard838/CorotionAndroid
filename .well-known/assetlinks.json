@@ -1,0 +1,44 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "id.jdsports.android",
+            "sha256_cert_fingerprints": [
+                "6A:B1:12:29:4E:DD:22:E7:B8:15:D8:55:7E:C1:DD:85:BE:24:D1:53:39:42:2E:55:45:2A:D5:CC:94:3F:07:1D",
+                "A9:FA:13:35:25:E5:21:6C:CA:17:5F:44:26:8B:36:9D:8A:BE:44:C7:37:DA:A8:E3:2A:E8:B7:BB:93:E9:B7:98",
+                "44:CF:86:90:D7:7E:D8:0F:0C:37:33:BD:0B:CB:ED:61:11:BF:69:44:06:7C:D2:DD:C9:FB:8C:33:DD:64:20:56"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "id.jdsports.android.staging",
+            "sha256_cert_fingerprints": [
+                "6A:B1:12:29:4E:DD:22:E7:B8:15:D8:55:7E:C1:DD:85:BE:24:D1:53:39:42:2E:55:45:2A:D5:CC:94:3F:07:1D",
+                "A9:FA:13:35:25:E5:21:6C:CA:17:5F:44:26:8B:36:9D:8A:BE:44:C7:37:DA:A8:E3:2A:E8:B7:BB:93:E9:B7:98",
+                "44:CF:86:90:D7:7E:D8:0F:0C:37:33:BD:0B:CB:ED:61:11:BF:69:44:06:7C:D2:DD:C9:FB:8C:33:DD:64:20:56"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "id.jdsports.android.dev",
+            "sha256_cert_fingerprints": [
+                "6A:B1:12:29:4E:DD:22:E7:B8:15:D8:55:7E:C1:DD:85:BE:24:D1:53:39:42:2E:55:45:2A:D5:CC:94:3F:07:1D",
+                "A9:FA:13:35:25:E5:21:6C:CA:17:5F:44:26:8B:36:9D:8A:BE:44:C7:37:DA:A8:E3:2A:E8:B7:BB:93:E9:B7:98",
+                "44:CF:86:90:D7:7E:D8:0F:0C:37:33:BD:0B:CB:ED:61:11:BF:69:44:06:7C:D2:DD:C9:FB:8C:33:DD:64:20:56"
+            ]
+        }
+    }
+]
